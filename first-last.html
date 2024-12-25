@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria com First-child e Last-child</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            width: 550px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 42px;
+            text-align: center;
+            background-color: #63A088;
+            color: white;
+            width: 550px;
+            margin: 20px auto;
+        }
+
+        div {
+            background-color: #1fe2b1;
+            display: inline-block;
+            text-align: center;
+            border: 1px solid #2A3C34;
+            margin: 5px;
+            width: 168px;
+            height: 168px;
+        }
+
+        p {
+            text-align: center;
+            width: 550px;
+            margin: 20px auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: #63A088;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+
+        .item:first-child {
+            background-color: #5FDD9D;
+        }
+
+        .item:last-child {
+            background-color: #16C196;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <h1>First-child e Last-child</h1>
+    <main>
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+    </main>
+    <br>
+
+    <p><a href="after.html">Voltar para a página anterior</a></p>
+    <p><a href="carregando.html">Ir para a próxima página</a></p>
+</body>
+
+</html>

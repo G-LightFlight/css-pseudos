@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcador com before</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 42px;
+            text-align: center;
+            background-color: #63A088;
+            color: white;
+            width: 550px;
+        }
+
+        div {
+            border: 1px solid black;
+            width: 550px;
+            font-size: 18px;
+        }
+
+        li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #63A088;
+        }
+ 
+        a:hover {
+            font-weight: bold;
+        }
+
+        #l1::before {
+            content: '›';
+            margin-right: 5px;
+            color: #FF521B;
+            font-weight: bold;
+        }
+
+        #l2::before {
+            content: '»';
+            margin-right: 5px;
+            color: #840032;
+            font-weight: bold;
+        }
+
+        #l3::before {
+            content: '⇒';
+            margin-right: 5px;
+            color: #6B7FD7;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Marcador com <em>before</em></h1>
+    <div>
+        <ul>
+            <li id="l1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li id="l2">At, fugiat fugit. Nesciunt quae, voluptates eaque.</li>
+            <li id="l3">Eum laborum cupiditate obcaecati dolorum accusantium? </li>
+        </ul>
+        <br>
+
+        <p><a href="botao.html">Voltar para a página anterior</a></p>
+        <p><a href="after.html" target="_self">Ir para a próxima página</a></p>
+    </div>
+    
+
+</body>
+
+</html>

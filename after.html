@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destaque com after</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 42px;
+            text-align: center;
+            background-color: #63A088;
+            color: white;
+            width: 550px;
+        }
+
+        div {
+            font-size: 18px;
+            width: 550px;
+            text-align: justify;
+        }
+
+        p {
+            text-align: right;
+        }
+
+        a {
+            text-decoration: none;
+            color: #63A088;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+
+        #justify {
+            text-align: justify;
+        }
+
+        .especial::after {
+            content: ' ♥';
+        }
+    </style>
+</head>
+<body>
+    <h1>Destaque com <em>after</em></h1>
+    <div>
+        <p id="justify" class="especial">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae commodi nam amet reiciendis corrupti exercitationem porro natus, voluptas ducimus inventore! Quas et, accusamus voluptas cum officiis itaque similique sed aperiam?</p>
+        <br>
+
+        <p><a href="before.html">Voltar para a página anterior</a></p>
+        <p><a href="first-last.html">Ir para a próxima página</a></p>
+    </div>
+
+    
+</body>
+</html>
